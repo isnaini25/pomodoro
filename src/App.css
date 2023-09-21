@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#timer-handler {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.clock-action {
+  font-size: 1.4rem;
+}
+
+#start,
+#start_stop {
+  margin-right: 32px;
+}
+#clock-timer {
+  width: 50vw;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 12px;
+  background-color: rgb(30, 59, 59);
+  border: 2px solid rgb(39, 87, 87);
+  border-radius: 20px;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#time-left {
+  font-size: 8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+#timer-label {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.time-out {
+  animation: change-color ease-in-out infinite 1000ms;
+}
+
+@keyframes change-color {
+  from {
+    background-color: rgb(57, 34, 34);
+    border: 2px solid rgb(95, 52, 52);
+  }
+  to {
+    background-color: rgb(30, 59, 59);
+    border: 2px solid rgb(39, 87, 87);
+  }
+}
+
+.count-handler span {
+  width: 80px;
+  background-color: rgba(65, 76, 72, 0.401);
+  font-weight: 700;
+  padding: 6px;
+}
+
+.count-handler {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+}
